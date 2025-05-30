@@ -9,6 +9,11 @@
  4. 支援 --reset all，恢復所有 VM 的 CPU pinning（保留 cores 原設定）。
  5. 自動計算 cores 數量，並用 --numa0 cpus= 指定 CPU 核心（用分號分隔）。
  6. 其他未指定的 VM 保持現有設定，不做修改，只顯示跳過提示。
+## 增強功能：
+ 1. 同時設置 numa0 cpus 和嚴格 CPU affinity
+ 2. 支持顯示當前 affinity 狀態
+ 3. 重置時會清除 affinity 設置
+ 4. 更好的錯誤處理和用戶提示
 
 ## 使用環境：
  - 需在 Proxmox VE 主機上以 root 或 sudo 權限執行。
